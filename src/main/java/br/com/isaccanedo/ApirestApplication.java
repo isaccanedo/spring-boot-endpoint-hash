@@ -31,7 +31,7 @@ public class ApirestApplication {
 		MessageDigest md = MessageDigest.getInstance("MD5");
 		md.reset();
 		md.update(dataAtual.getBytes());
-		return "EndPoint funcionando\n"+" - Hash do chamado: " + new BigInteger(1, md.digest()).toString(16);
+		return "EndPoint funcionando\n"+" - Hash da Requisição: " + new BigInteger(1, md.digest()).toString(16);
 	}
 
 }
